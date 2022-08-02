@@ -1,0 +1,32 @@
+#Install an sql database packages (postgresql in this case)
+sudo apt install postgresql postgresql-contrib
+#Go into the postgres server (default user) (to exit type 'exit')
+sudo -i -u postgres
+
+#the psql is an interface for postgres. enter with psql-------------
+psql
+#list users
+postgres=# \du
+#list databases
+postgres=# \l
+#change the postgres password
+postgres=# alter user postgres with password 'password'
+#exit psql
+postgres=# \q
+#-------------------------------------------------------------------
+
+
+#create user (username carlos)
+createuser -s carlos -P
+#create database
+createdb carlos_database
+
+
+#*********************************************************************
+sudo apt install libpq-dev
+pip3 install sqlalchemy
+pip3 install PyMySQL
+pip3 install pandas
+pip3 install psycopg2
+
+

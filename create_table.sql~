@@ -1,0 +1,14 @@
+
+CREATE TABLE diabetes
+(
+	PatientID INT PRIMARY KEY,
+	Glucose	INT,
+	BloodPressure INT,
+	SkinThickness INT,
+	Insulin	INT,
+	BMI REAL,
+	DiabetesPedigreeFunction REAL,
+	Outcome INT
+);
+
+COMMIT;
